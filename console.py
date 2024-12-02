@@ -60,7 +60,7 @@ class Console:
         prompt_2 = input("Do you want to save this string? (Y/N): ")
         if prompt_2.lower() == "y":
             try:
-                upload(encrypted)
+                upload(encrypted, cipher_key, n)
             except IOError as e:
                 print(e)
 
